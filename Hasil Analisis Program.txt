@@ -1,0 +1,17 @@
+MyApp Class (StatelessWidget):
+
+Memulai aplikasi dengan menggunakan MaterialApp.
+Menentukan halaman utama (home) sebagai Scaffold yang memiliki AppBar dan body berisi widget ImageNavigator.
+ImageNavigator Class (StatefulWidget):
+
+Mengelola tampilan gambar dan tombol navigasi.
+Terdapat daftar URL gambar yang dihasilkan menggunakan List.generate dan disimpan dalam images.
+Menyediakan metode untuk mengubah gambar yang sedang ditampilkan (changeImage) berdasarkan indeks gambar saat ini.
+Metode firstImage, nextImage, previousImage, dan lastImage untuk navigasi gambar pertama, berikutnya, sebelumnya, dan terakhir.
+Memiliki tata letak yang terdiri dari gambar yang sedang ditampilkan dalam Expanded widget dan tombol navigasi dalam Row.
+Widget Build:
+
+Membangun tata letak aplikasi dengan menggunakan Column yang berisi gambar yang dapat diperluas dan baris tombol navigasi.
+Gambar ditampilkan menggunakan Image.network yang mengambil URL dari images[currentIndex].
+Tombol navigasi dibuat menggunakan ElevatedButton dengan teks yang sesuai ('First', 'Previous', 'Next', 'Last') dan terkait dengan metode yang telah ditentukan sebelumnya.
+Fungsionalitas utama dari kode ini adalah menampilkan gambar dari daftar yang ada dan memungkinkan pengguna untuk menavigasi maju-mundur di antara gambar tersebut dengan menggunakan tombol yang tersedia.
